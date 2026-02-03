@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+.testimonial-section{
+    @apply w-full flex flex-col gap-15 sm:gap-20 xl:gap-30 2xl:gap-40 items-center text-center;
+}
+
+.testimonial-section .top-text-section{
+    @apply flex flex-col;
+}
+
+.testimonial-list{
+    @apply grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-10 lg:gap-20 xl:gap-30;
+}
+
+.testimonial-card{
+    @apply flex flex-col items-center gap-5 sm:gap-7 lg:gap-9 xl:gap-11 2xl:gap-13;
+}
+
+.testimonial-card p:first-child{
+    @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold;
+}
+
+.testimonial-card .profile-section span{
+    @apply text-lg lg:text-xl xl:text-2xl font-semibold;
+}
+
+.testimonial-card .profile-section p{
+    @apply text-sm lg:text-lg xl:text-xl;
+}
+
+.profile-section{
+    @apply flex flex-col items-center gap-2;
+}
+
+.testimonial-card img{
+    @apply w-12 sm:w-14 md:w-16 lg:w-18 xl:w-20 2xl:w-25 aspect-square rounded-full;
+}
