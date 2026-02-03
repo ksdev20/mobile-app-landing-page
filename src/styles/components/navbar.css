@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import 'tailwindcss';
+
+.navbar{
+    @apply sticky z-10 flex items-center justify-center w-full select-none;
+}
+
+.nav-container{
+    @apply items-center justify-between w-full;
+}
+
+.mobile-navbar{
+    @apply flex flex-col w-full md:hidden px-5 py-2;
+}
+
+.visible-mobile-nav-container{
+    @apply flex items-center px-5 py-2;
+}
+
+.menu-btn{
+    @apply flex;
+}
+
+.logo-section{
+    font-family: 'Sora';
+    @apply flex items-center gap-2 text-2xl font-bold;
+}
+
+.logo-section img{
+    @apply w-10 h-10;
+}
+
+.mobile-navbar .logo-section .logo-txt{
+    @apply hidden sm:block;
+}
+
+.navbar-sidebar{
+    @apply flex flex-col py-5 bg-[var(--secondary)] text-white rounded-2xl;
+}
+
+.navbar-sidebar .nav-link-submenu{
+    @apply ml-10 border-l
+}
+
+.navbar-sidebar a{
+    @apply flex items-center text-xl font-semibold pl-5 py-2;
+}
+
+.navbar-sidebar .submenu-item{
+    @apply flex justify-between pr-5 cursor-pointer;
+}
+
+.navbar-sidebar .submenu a{
+    @apply ml-5;
+}
+
+.navbar-sidebar a:hover{
+    @apply bg-[var(--secondary-btn-hover)];
+}
+
+.navbar-sidebar li:not(:last-of-type){
+    @apply border-b border-gray-300;
+}
+
+.pc-navbar{
+    @apply hidden md:flex px-10 py-3;
+}
+
+.nav-links{
+    @apply text-gray-700 flex items-center gap-7 font-semibold;
+} 
+
+.nav-links a:hover{
+    @apply text-black;
+}
+
+.nav-links .submenu-item{
+    @apply flex items-center gap-2 cursor-pointer;
+}
+
+.nav-links .submenu-item svg{
+    @apply fill-gray-600;
+}
+
+.nav-links a:hover svg{
+    @apply fill-black;
+}
+
+.submenu-li{
+    @apply  relative z-0;
+}
+
+.nav-links .submenu{
+    @apply absolute top-[100%] left-0 bg-[var(--secondary)] rounded-xl py-2 text-white;
+}
+
+.nav-links .submenu a{
+    @apply pl-5 w-30 py-1 flex items-center;
+}
+
+.nav-links .submenu a:hover{
+    @apply text-white bg-[var(--secondary-btn-hover)];
+}
