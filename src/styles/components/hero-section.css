@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/*Hero Section*/
+.hero{
+    @apply flex w-full items-center text-white;
+}
+
+.hero img{
+    @apply w-full aspect-[1/1.3] sm:aspect-square max-h-[80vh] object-cover select-none;
+}
+
+.hero .hero-container{
+    @apply relative z-0 w-full flex;
+}
+
+.hero .hero-container h1{
+    font-family: 'Sora';
+    @apply absolute z-20 left-10 top-10 xl:top-15 xl:left-15 max-w-xs lg:max-w-lg 2xl:max-w-xl text-5xl sm:text-6xl 2xl:text-7xl font-bold  2xl:top-20 2xl:left-20;
+}
+
+.hero .hero-container .part2{
+    @apply absolute z-20 bottom-10 right-10 max-w-sm text-lg 2xl:text-xl flex flex-col gap-5 xl:bottom-15 xl:right-15 2xl:bottom-20 2xl:right-20;
+}
+
+.hero .hero-container .part2 .buttons{
+    @apply flex items-center gap-3;
+}
+
+.hero .hero-container .black-bg{
+    @apply absolute inset-0 z-10 bg-black/30;
+}
+
+.hero .btn{
+    @apply  px-4 py-0.5 rounded-xl;
+}
+
+.btn.hero-first{
+    @apply bg-white text-black;
+}
+
+.btn.hero-second{
+    @apply backdrop-blur-xs text-white outline;
+}

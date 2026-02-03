@@ -1,4 +1,5 @@
 import { hero } from "../config/hero";
+import '../styles/components/hero-section.css';
 
 export function Hero() {
   const { img, h1, p, buttons } = hero;

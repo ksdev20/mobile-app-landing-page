@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/*Features Section*/
+
+.features{
+    @apply flex flex-col gap-15 lg:gap-20 2xl:gap-30 w-full items-center text-center bg-[#f2f2f2];
+}
+
+.top-text-section span,
+.feature-section-2 span{
+    @apply font-semibold lg:text-xl;
+}
+
+.top-text-section h2,
+.feature-section-2 h2{
+    @apply font-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl;
+}
+
+.top-text-section p{
+    @apply lg:text-xl;
+}
+
+.cards-list{
+    @apply grid grid-cols-1 md:grid-cols-3 w-full gap-10 sm:gap-15 md:gap-5 lg:gap-10 xl:gap-15 2xl:gap-20;
+}
+
+.card{
+    @apply flex flex-col items-center w-full;
+}
+
+.card img{
+    @apply object-cover rounded-2xl w-full;
+}
+
+.card h3{
+    @apply text-2xl font-bold md:text-3xl 2xl:text-4xl;
+}
+ 
+.card p{
+    @apply lg:text-xl text-justify text-start;
+}

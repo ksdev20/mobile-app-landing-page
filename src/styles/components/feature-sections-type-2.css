@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/*Feature Sections Type 2*/
+/*md for pc layout*/
+.feature-sections-type-2{
+    @apply flex flex-col gap-10 sm:gap-15 lg:gap-20 xl:gap-25 2xl:gap-30 pb-20;
+}
+
+.feature-sections-type-2 .feature-section-2:not(:first-child){
+      @apply border-t border-[#d9dada];
+}
+
+.feature-section-2{
+    @apply relative flex flex-col items-center text-start w-full;
+}
+
+.fs2-container{
+    @apply flex w-full flex-col gap-10 md:flex-row justify-between items-start pt-20 md:pt-30 lg:pt-40;
+}
+
+.top-text{
+    @apply absolute top-2 left-0 font-bold lg:text-xl flex items-start gap-4;
+}
+
+.fs2-container .text-section{
+    @apply flex flex-col md:max-w-xs lg:max-w-sm xl:max-w-md 2xl:max-w-lg;
+}
+
+.fs2-container .text-section .buttons{
+    @apply mt-7 mb-10;
+}
+
+.fs2-container img{
+    @apply object-cover aspect-auto w-auto md:max-w-sm lg:max-w-lg xl:max-w-xl 2xl:max-w-3xl rounded-xl;
+}

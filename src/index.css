@@ -33,94 +33,6 @@ body{
     @apply flex flex-col;
 }
 
-/*Hero Section*/
-.hero{
-    @apply flex w-full items-center text-white;
-}
-
-.hero img{
-    @apply w-full aspect-[1/1.3] sm:aspect-square max-h-[80vh] object-cover select-none;
-}
-
-.hero .hero-container{
-    @apply relative z-0 w-full flex;
-}
-
-.hero .hero-container h1{
-    font-family: 'Sora';
-    @apply absolute z-20 left-10 top-10 xl:top-15 xl:left-15 max-w-xs lg:max-w-lg 2xl:max-w-xl text-5xl sm:text-6xl 2xl:text-7xl font-bold  2xl:top-20 2xl:left-20;
-}
-
-.hero .hero-container .part2{
-    @apply absolute z-20 bottom-10 right-10 max-w-sm text-lg 2xl:text-xl flex flex-col gap-5 xl:bottom-15 xl:right-15 2xl:bottom-20 2xl:right-20;
-}
-
-.hero .hero-container .part2 .buttons{
-    @apply flex items-center gap-3;
-}
-
-.hero .hero-container .black-bg{
-    @apply absolute inset-0 z-10 bg-black/30;
-}
-
-.hero .btn{
-    @apply  px-4 py-0.5 rounded-xl;
-}
-
-.btn.hero-first{
-    @apply bg-white text-black;
-}
-
-.btn.hero-second{
-    @apply backdrop-blur-xs text-white outline;
-}
-
-/*Features Section*/
-
-.consistent-padding{
-    @apply px-10 py-10 sm:px-15 sm:py-15 lg:px-20 lg:py-20 2xl:px-30 2xl:py-30;
-}
-
-.consistent-gap{
-    @apply gap-3 sm:gap-7 xl:gap-10;
-}
-
-.features{
-    @apply flex flex-col gap-15 lg:gap-20 2xl:gap-30 w-full items-center text-center;
-}
-
-.top-text-section span{
-    @apply font-semibold lg:text-xl;
-}
-
-.top-text-section h2{
-    @apply font-bold text-3xl lg:text-4xl 2xl:text-5xl;
-}
-
-.top-text-section p{
-    @apply lg:text-xl;
-}
-
-.cards-list{
-    @apply grid grid-cols-1 md:grid-cols-3 w-full gap-10 sm:gap-15 md:gap-5 lg:gap-10 xl:gap-15 2xl:gap-20;
-}
-
-.card{
-    @apply flex flex-col items-center w-full;
-}
-
-.card img{
-    @apply object-cover rounded-2xl w-full;
-}
-
-.card h3{
-    @apply text-2xl font-bold md:text-3xl 2xl:text-4xl;
-}
- 
-.card p{
-    @apply lg:text-xl text-justify text-start;
-}
-
 .buttons{
     @apply flex items-center gap-5;
 }
@@ -139,4 +51,12 @@ body{
 
 .buttons svg{
     @apply fill-black;
+}
+
+.consistent-padding{
+    @apply px-10 py-10 sm:px-15 sm:py-15 lg:px-20 lg:py-20 2xl:px-30 2xl:py-30;
+}
+
+.consistent-gap{
+    @apply gap-3 sm:gap-7 xl:gap-10;
 }

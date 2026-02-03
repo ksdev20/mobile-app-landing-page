@@ -1,5 +1,6 @@
 import { features } from "../config/features";
 import ChevronRight from "./icons/ChevronRight";
+import '../styles/components/features-section.css';
 
 export function Features() {
   const { topText, cards, buttons } = features;
