@@ -12,10 +12,10 @@ import { SubMenuBtn } from "./SubMenuBtn";
 
 function LogoSection() {
   return (
-    <div className="logo-section">
+    <a href="/" className="logo-section">
       <img src={logoObj.img.url} alt={logoObj.img.alt} />
       <div className="logo-txt">{logoObj.text}</div>
-    </div>
+    </a>
   );
 }
 
@@ -39,7 +39,7 @@ export function Navbar() {
       <div className="mobile-navbar">
         <div className="nav-container visible-mobile-nav-container">
           <div className="menu-btn">
-            <Hamburger onToggle={toggleMenu} />
+            <Hamburger size={25} onToggle={toggleMenu} />
           </div>
           <LogoSection />
           <a href={downloadBtn.link} className="btn primary">
